@@ -9,7 +9,7 @@ output : (2, 4)
 if sum < target expand (end ++)
 else if sum > target contract(start++)
 
-findSubArray(int a[]){
+findSubArray(int a[],  int target){
     int start = 0, end =0, sum = a[0];
 
 while(start < a.length){
