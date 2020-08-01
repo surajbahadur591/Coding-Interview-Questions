@@ -1,0 +1,33 @@
+given an array of number , replace each even number with 2 of the same 
+
+input : [2, 4, 1, 0, 3, -1, -1, -1]
+ouput : [2, 2, 4, 4, 1, 0, 0, 3]
+
+int findLastNum(int a[]){
+    int num;
+    for (i = a.length; i>0;i--){
+        if(a[i]!=-1){
+            num = a[i];
+            break;
+
+        }
+        
+    }
+}
+void cloneEvenNum(int []a){
+    int end = a.length;
+    int i = findLastNum(a);
+    while (i >= 0){
+        if (a[i]%2==0){
+            end--;
+            a[end]==a[i];
+            end--;
+            a[end]==a[i];
+        }
+        else {
+            end--;
+            a[end]==a[i];
+        }
+        i--;
+    }
+}
