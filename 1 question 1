@@ -13,6 +13,7 @@ int findLastNum(int a[]){
         }
         
     }
+    return num;
 }
 void cloneEvenNum(int []a){
     int end = a.length;
