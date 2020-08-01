@@ -1,4 +1,4 @@
-[reverse for both end]
+[travers from both end]
 [two pointer method]
 
 Two sum - given an sorted array, find two number that sum to a target (x)
