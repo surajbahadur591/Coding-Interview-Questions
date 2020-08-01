@@ -1,0 +1,18 @@
+[reverse for both end]
+[two pointer method]
+
+Two sum - given an sorted array, find two number that sum to a target (x)
+
+input  : [1, 2, 4, 5, 6] , x =8
+output : (1, 4)
+
+public pair twoSum(int a[], int x){
+    int start = 0, end = a.length-1;
+    while (start < end){
+        int sum = a[start] + a[end];
+        if(sum < target) start++;
+        else if (sum > target) end--;
+        else return newPair(start, end);
+    }
+    return None;
+}
