@@ -1,0 +1,36 @@
+[subarray - sliding window]
+
+given an array of unsorted +ve interger, find a subarray that sums to a target
+
+
+input : [5, 3, 1, 7, 6, 4, 2, 3] , x= 14
+output : (2, 4)
+
+if sum < target expand (end ++)
+else if sum > target contract(start++)
+
+findSubArray(int a[]){
+    int start = 0, end =0, sum = a[0];
+
+while(start < a.length){
+
+
+    if (start > end ){
+        end = start;
+        sum = a[start]
+    }
+    if (sum < target) {
+        if(end==a.length-1) break;
+        end++;
+        sum += a[end];
+    }
+    else if (sum > target ){
+        sum -= a[start];
+        start++;
+    }
+    else return newPair (start, end);
+}
+
+return null;
+
+}
