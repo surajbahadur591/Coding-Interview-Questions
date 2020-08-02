@@ -52,7 +52,21 @@ Store :
 High level Design
 Detailed Design
 
+Load Balancer :
 
+mobile <-> Internet <-> Load Balancer <-> App servers -> Distributed DB
+
+App Servers - handles requests (HTTP)
+load Balancer - assigns requests from mobile to app servers
+    -> picks app servers
+    -> forward requests to app servers
+    -> recieve response from app servers
+    -> forward response to client 
+Benifits 
+    -> improves response time (gives requests to app servers which is not busy)
+    -> improves fault tolerance (if one app servers fails, send requests to another app servers)
+    -> hides internal servers (security)
+    -> handles failure
 
 
 
