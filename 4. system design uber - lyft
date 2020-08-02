@@ -1,0 +1,58 @@
+system design 
+uber/lyft - high level design - FUSHD
+
+Features :
+1. store user and driver profile
+2. find ride and drive (hail ride)
+
+Use cases : 
+1. Rider 
+    -> Request ride
+    -> get Estimated time of arrival (ETA)
+    -> Ride to destination
+    -> End Ride
+2. Driver 
+    -> Accept/reject Request
+    -> pick passenger
+    -> Drive to destination
+    -> end ride
+    
+    RIDER
+ -------                --------              --------
+|  1.   |   2.         |  3.    |            |   4.   |             
+|request|   wait       |driver  |            | riding |             
+|       |------------->|   eta  |----------->|        |    after ending go back to 1.
+|       |              |        |            |        |                                                                     
+ -------                --------              --------
+
+
+    Driver
+ -------                --------              --------
+|  1.   |  2.wait      |4.accept|----------->|   5.   |             
+| wait  |------------->|________|            |location|
+|       |    3.reject  |  reject|            |        |------>6.Riding--->7.End-->go back to 1.
+|       |<-------------|        |            |        |                                                                     
+ -------                --------              --------
+
+Store :
+1. User  State
+    -> not riding
+    -> requesting 
+    -> waiting
+    -> riding
+
+2. Driver State 
+    -> waiting
+    -> requesting
+    -> pick up
+    -> driving
+
+3. Ride 
+
+
+
+
+
+
+
+
