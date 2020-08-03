@@ -1,0 +1,34 @@
+CAP theorem
+
+consistency - Availablity - Partition Tolerance : any distribution DB is trade off between these three 
+
+consistency:
+if there are more than 1 DB , if one of database gets updated then the same should be updated in all other databases
+
+to achieve this feature the first database should writes to other database and only after the other databases is updated (aknowledgement is recieved)then only the first database gets updated.
+the tradeoff is , it took longer time to get updated because we have to make round trip to other database
+
+some requires low consistency like notification, like button
+some requires high consistency like prices, e-commerce website, bank etc
+
+
+Availablity :  
+the system gives non error response everytime
+suppose if the database is getting updated for x sec, the client should wait and try again after some time
+
+
+partition Tolerance : the system continues to operate in spite of network partition
+if there is only one DB there is no concept of partition Tolerance
+ 
+
+consistency---------partition Tolerance
+      \                /
+       \              /
+        \            /
+         \          /
+          \        /
+           \      /
+            \    /
+             \  /
+              \/
+         Availablity
