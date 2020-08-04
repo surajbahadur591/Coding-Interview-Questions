@@ -1,0 +1,26 @@
+fibonacci - with recursion (backtracking) - find nth element
+series = 1, 1, 2, 3, 5, 8, 13....
+
+void fibonacci( int n ){
+      if (n==1 || n==2)
+            return 1;
+      return fibonacci(n-1)+fibonacci(n-2);
+}
+time - O(2^n) - exponential
+space - O(n) - because of call stack
+
+
+fibonacci - with memorization using map - find nth element
+
+void fibonacci(int n, Map m){
+      if (n==1 || n==2)
+            return 1;
+      if( m.contains(n))
+            return m.get(n);
+      result = fibonacci(n-1)+ fibonacci (n-2);
+      m.put(n, result);
+      return result;
+}
+
+time = O(n)
+space = O(n)
