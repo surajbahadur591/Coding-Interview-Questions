@@ -1,0 +1,24 @@
+binary search - find the minimum in a cyclically sorted array
+
+input : [7, 8 , 1, 2, 3 , 5]
+output : 2
+
+hint : use rightmost as pivot
+
+int findMinimum ( int array[], int target){
+      int low = 0, high = array.length-1, rightmost = a[a.length-1];
+
+      while(low<= high){
+            int mid = low + (high - low)/2;
+            if(array[mid] <=rightmost && (mid==0)||array[mid-1] > array[mid])){
+                  return mid;
+            }
+            else (array[mid]>target){
+                  low = mid+1;
+            }
+            else {
+                  high = mid -1;
+            }
+      }
+      return -1;
+}
