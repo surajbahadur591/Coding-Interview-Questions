@@ -15,4 +15,5 @@ int binarySearch ( int arr[], int target){
             }
             else return mid;
       }
+      return -1;
 }
