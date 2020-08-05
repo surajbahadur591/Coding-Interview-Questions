@@ -1,0 +1,23 @@
+recursion - using auxiliary buffer
+
+given an array, print all permutations of size (x=3)
+
+input : [1,2,3,4,5,6,7]
+output : 123, 132, 231, 312, .....
+567 != 765, 123 != 312
+
+public static void printPer( int a[], int buffer[], int bufferIndex, boolean[] isinbuffer){
+            if(bufferIndex == buffer.length) {
+                  printArray(buffer);
+                  return;
+                  }
+            for(int i =0, i<a.length;i++){
+                  if(!isinbuffer[i]){
+                        buffer[bufferIndex]=a[i];
+                        isinbuffer[i]=true;
+                        printPer(a, buffer, bufferIndex+1, isinbuffer )
+                        isinbuffer[i]=false;
+                  }
+            }
+}     
+            
