@@ -1,0 +1,20 @@
+recursion - using auxiliary buffer
+
+print all subsets of an array intergers
+
+input : [1,2,3]
+output : [], [1], [2], [3], [1,2], [1,3],[2,3] [1,2,3]
+
+public static void printCombo(int a[], int []buffer, int startindex, int bufferindex){
+      printArray(buffer, bufferindex );
+      if(bufferindex== bufferindex)
+      return;
+
+      if(startindex ==a.length)
+      return;
+
+      for (int i = startindex, i<a.length;i++){
+            buffer[bufferindex]= a[i];
+            printCombo(a, buffer, i+1, bufferindex+1);
+      }
+}
