@@ -1,0 +1,21 @@
+recursion - using auxiliary buffer
+
+print all combination of length 3
+
+input: [1, 2, 3, 4, 5, 6, 7]
+output : [1,2,3], [1,2,4].......
+
+public static void printCombination( int array[], int buffer[], int arrayIndex, int bufferIndex){
+      if(bufferIndex == buffer.length){
+            printArray(buffer);
+            return;
+      }
+      if(arrayIndex == a.length)
+            return;
+      
+      for (int i =arrayIndex;i<array.length, i++){
+            buffer[bufferIndex] = array[i];
+            printCombination(array, buffer, i+1, bufferIndex+1);
+      }
+            
+}
