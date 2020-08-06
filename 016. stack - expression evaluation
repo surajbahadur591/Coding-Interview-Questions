@@ -1,0 +1,46 @@
+stack - expression evaluation
+
+postfix expression
+
+1+3 -> 13+
+15+2- -> 1+5-2
+
+iterate through stream, add number to one stack and when you see operator pop 2 number from stack and perform operation
+and put result back to stack
+
+evaluate ( list<char>):
+      for ch in list:
+            if ch is operand:
+                  s1.push(ch)
+            elif ch is operator:
+                  process(stack, operator)
+      return s.pop()
+
+process ( operand stack, operator):
+      pop 2 element
+      operate
+      push result
+
+
+infix expression 
+
+32+ -> 3+2
+1+5-2 -> 15+2-
+
+maintain 2 stack , one for operand one for operator and iterate through stream 
+
+for ch in exp:
+      if ch is operand:
+            push -> operand
+      else:
+            while (precedence (operator.top) >= precedence(ch)):
+                  process (operator, operand);
+return operand.top()
+
+
+process ( operator, operand):
+      num2= operand.pop()
+      num1 = operand.pop()
+      result = apply(num1, num2, operator.pop())
+      operand(result)
+      
