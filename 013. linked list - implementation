@@ -1,0 +1,45 @@
+linked list - implementation
+
+adding node to linked list
+
+class Node {
+      Node next;
+      int data;
+}
+
+Node head;
+Node tail;
+
+append (Node n , Node head, Node tail){
+      if(head == null)
+            head = n;
+      else 
+            tail.next = n;
+      tail = n;
+}
+
+given a linked list of element 0,1,2 sort it 
+input: 0->2->0->1->0->2->1
+output : 0 0 0 1 1 2 2 
+
+create 3 linked list
+0->0->0
+1->1
+2->2
+then append 1 to 0 and 2 to 1
+
+delete a node from linked list
+
+delete (Node head, Node tail, Node todelete, Node prev){
+      if (todelete == null)
+            return
+      if (todelete == head)
+            head = todelete.next
+      if ( todelete == tail) {
+            tail = prev , prev.next = null;
+      }
+      if ( prev ==null){
+            prev.next = todelete.next;
+      }
+
+}
