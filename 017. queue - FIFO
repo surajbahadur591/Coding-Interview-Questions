@@ -1,0 +1,29 @@
+queue - FIFO
+
+enqueue, dequeue
+
+implementation - linked list, arrays [circular queue]
+
+using array - size is limited
+class Queue {
+      front = 0, back =0, length =0
+      enqueue (n){
+            if(length == a.length)
+            throw exception
+
+            a[back] = n;
+            back = (back+1)%a.length;
+            length++;
+
+      }
+      dequeue(){
+            if(length==0)
+            throw exception
+
+            result = a[front]
+            front = (front+1)%a.length;
+            length--;
+
+      }
+      return result;
+}
