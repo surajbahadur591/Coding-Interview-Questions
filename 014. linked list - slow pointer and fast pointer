@@ -1,0 +1,36 @@
+linked list - slow pointer and fast pointer
+
+find if linked list has a cycle or not
+
+algo :
+boolean findCycle(){
+while (fast != null){
+      fast+1;
+      if (fast== slow) return true;
+      fast+1;
+      if (fast== slow) return true;
+      slow+1;
+}
+return false;
+} 
+
+linked hashtable
+hashtable is a key value pair 
+every value of each key in hashtable points to each node of linked list
+advantage : O(n) lookup
+
+ex: LRU [least recently used] cache problem
+
+reverse a linked list [banned question for interview]
+
+prev, curr, next
+
+while (curr!=null){
+      curr.next = prev;
+      prev = curr;
+      curr = next;
+      next = curr.next;
+      
+}
+
+
