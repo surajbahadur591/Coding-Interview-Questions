@@ -1,0 +1,22 @@
+stack - LIFO
+
+push, pop, peek
+
+find a number is present in stack or not (using temporary stack)
+
+find ( Stack s , int num){
+      Stack temp;
+      while !s.empty(){
+            top = s.peek();
+            if (top == num)
+                  return true;
+            temp.push(s.pop());
+      }
+      while !temp.empty() {
+            s.push(temp.pop());
+      }
+}
+
+implement queue using 2 stack (using stack as restriction)
+implement 2 stack using array 
+stack with max
