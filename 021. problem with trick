@@ -1,0 +1,23 @@
+problem with trick
+
+check if a string is a rotation of another 
+
+bobcat, atbobc
+true
+
+append bobcat and bobcat  - >bobcatbobcat
+it target string is  substring then true, else false
+
+reverse words in a string
+
+my name is suraj
+suraj is name my
+
+reverse entire string and reverse each words
+jarus si eman ym
+suraj is name my
+
+longest palindrome in a substring
+abkayakcd
+kayak
+
