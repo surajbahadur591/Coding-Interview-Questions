@@ -1,0 +1,18 @@
+max difference technique
+
+given an array of stock price what is the best time to sell stock to gain max profit with only one trade
+
+find max difference such that large element comes after small element
+
+keep track of small element before current element, then find out difference
+
+int maxDiff(a):
+    minSoFar = -infinity
+    maxTrade = 0
+    for i in a:
+        minSoFar = min (a[i], minSoFar)
+        max_profit_at_i = a[i]- minSoFar
+        if(max_profit_at_i>maxTrade):
+            maxTrade = max_profit_at_i
+    return maxTrade
+
