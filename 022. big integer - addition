@@ -1,0 +1,33 @@
+big integer - addition
+
+given two array that represent numbers, find their sum
+a = [1,6,4,3]
+b = [1,3,1]
+
+result = [1,7,7,4]
+
+remainder = sum%10 
+carry = sum/10
+
+324 + 19
+i is length of array 
+carry = 0;
+algo :
+sum = carry + a[i] + b[i]
+result[i] = sum%10
+carry = sum/10
+
+public int[] add(int []a, int []b){
+        int []larger = a.length > b.length ? a :b;
+        int  []smaller = a==larger? b :a ;
+        int result[] = new int[larger.length+1];
+
+        smaller = resize ( smaller, larger,length);
+        int carry = 0;
+        for ( int i = larger.length-1; i>=0;i++) {
+            int sum = carry + larger[i]+ smaller[i];
+            carry = sum/10;
+            result[i+1] = sum%10;
+        }
+}
+
