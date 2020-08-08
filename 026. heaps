@@ -1,0 +1,16 @@
+heaps 
+
+max heap, min heap
+
+max heaps are binary tree such that parent > child, root is the greatest element
+O(1) lookup for maximum element in tree i.e used for implemention of priority queue
+O(logn) to insert element
+O(logn) to delete element
+
+
+min heap are binary tree such that child > parent and root is the smallest element
+O(1) lookup for minimum element in tree
+O(logn) to insert element
+O(logn) to delete element
+
+find the 4 smallest numbers in an array
