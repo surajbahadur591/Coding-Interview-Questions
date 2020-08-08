@@ -14,3 +14,35 @@ O(logn) to insert element
 O(logn) to delete element
 
 find the 4 smallest numbers in an array
+
+heap - implementation
+    
+    A
+  B    C
+ D  E   F
+
+  a = {A , B , C , D, E,F}
+
+left[i] = 2*i+1
+right[i] = 2*i+2
+parent[i] = [i-1]/2
+
+operation - insert, delete max, delete any node
+note : heaps are complete binary tree
+insert(node)
+add element to last then propogate, swap root with leaf
+
+delete max()
+place last leftmost leaf to top root, then heapify 
+last element
+heapify(node){
+    max (left, right, node)
+    if(max!=node)
+        heapify(max)
+}
+
+delete any node
+place last node from right sub tree to deleted node
+then if replaced_node < either of children then heapify(node)
+if node > parent then propogate
+
