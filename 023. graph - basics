@@ -1,0 +1,30 @@
+graph - basics
+
+nodes, vertices
+directed , undirected graph 
+graphs has cyclic, trees dont have cyclic
+
+we can implement graph using 
+1. adjacent list [most common way]
+2. adjacent matrix
+
+adjacent list 
+A - {B,C}
+B - {C, D}
+
+class Node {
+    list <Node> neighbour;
+    int data;
+}
+class Graph {
+    List<Node> nodes;
+}
+
+
+adjacent matrix 
+
+ A B C D 
+A1 1 1 0
+B1 0 0 1
+C1 1 1 0
+D0 1 1 0
