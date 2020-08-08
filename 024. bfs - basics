@@ -1,0 +1,31 @@
+bfs - basics 
+also used for level order
+
+s
+1 -> 2
+|d   |d
+3 -> 4
+|d   |d 
+5 -> 6
+
+bfs - 1, 2, 3, 4, 5, 6
+
+make three state - unvisited, visiting, visisted
+initially all nodes are unvisited
+
+bfs (Node start):
+    q.push(start)
+    start -> visiting
+    while !q.empty:
+        current = q.pop()
+        process current // ex print
+        add unvisited neighbour to queue and mark them visiting (2.3)
+        current -> visisted
+
+process:
+    visit each unvisited neighbour
+    mark visisted
+    
+
+
+
