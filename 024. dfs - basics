@@ -1,0 +1,29 @@
+dfs - basics 
+
+s
+1 -> 2
+|d   |d
+3 -> 4
+|d   |d 
+5 -> 6
+
+dfs - 1, 2, 4, 6, 3, 5
+
+make three state - unvisited, visiting, visisted
+initially all nodes are unvisited
+process:
+    visit each unvisited neighbour
+    mark visisted
+    
+
+dfs_visit (node):
+    mark node_visiting
+    process node //ex : print
+
+for all nodes in graph:
+    mark unvisited
+for all nodes in graph:
+    if node is unvisited:
+        dfs_visit(node)
+        
+
