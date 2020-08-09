@@ -1,0 +1,25 @@
+BST
+
+binary search in binary tree
+
+node level property : left.node < parent, parent > right.node
+tree level property : left subtree nodes are always less than root and right subtree nodes are always greater than root
+
+find given binary tree is BST
+
+adding a node
+
+deleting a node 
+1. delete a node
+2. node has 1 child
+3. node has  2 child
+    find successor - left most child of right subtree
+
+problem - find next successor
+
+it can be left most child of right subtree or first parent of current node to the right or last node of tree
+
+building BST
+1. from sorted array
+2. from sorted linked list
+
