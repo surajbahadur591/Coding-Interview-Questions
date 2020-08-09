@@ -1,0 +1,31 @@
+binary tree - top to bottom 
+
+find height of tree
+findHeight(Node n, pDepth, maxDepth){
+    if (n == null)
+        return 
+    nDepth = pDepth  +1;
+    if(nDepth>maxDepth)
+        maxDepth = nDepth;
+    findHeight(n.left, nDepth, maxDepth)
+    findHeight(n.right, nDepth, maxDepth)
+}
+findHeight(root, -1, -1)
+
+binary tree - bottom to top
+find height (maximum Depth)
+
+nodeheight = max(leftheight, rightHeiht) + 1;
+
+int height (node root){
+    if(root.left == null && root.right == null)
+        return 0;
+    leftheight = 0, rightHeiht =0;
+    if(root.left!= null){
+        leftheight = height(root.left);
+    }
+    if(root.right != null){
+        rightHeiht = height(root.right)
+    }
+    return max(leftheight, rightHeiht) + 1;
+}
