@@ -1,0 +1,34 @@
+sorting algorithms 
+
+O(n2)
+insertion sort
+bubble sort
+selection sort 
+
+O(nlogn)
+mergersort
+quicksort
+
+special use case
+bucketsort
+radixsort
+
+
+merge sort (divide and conquer algorithms)
+
+sort 1st half
+sort 2nd half
+merge
+
+merge sorted array
+[1,2,4,7,8] , [2,3,5]
+
+result = [1,2,3,4,5,7,8]
+solve in O(n) time and  O(n) space
+solve using two pointer
+
+quick sort [inplace algorithms]
+default sort function in any language uses quicksort
+worstcase is O(n2) and average case is O(nlogn)
+
+pigeonhole sort ( bucket sort)
