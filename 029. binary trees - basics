@@ -1,0 +1,51 @@
+binary trees - basics
+
+each node has atmost 2 child
+
+depth of node = no of edge from that node to the root 
+height of node = max depth from root
+
+implementation - using recursion
+
+class Node {
+    int data;
+    Node left;
+    Node right;
+}
+
+Traversal - inorder, preorder, postorder
+
+inorder - left, current, right
+
+visit(Node){
+    visit node.left;
+    visit node; // print node.data;
+    visit node.right;
+}
+
+preorder - current, left, right
+
+visit (node) {
+    print node.data;
+    visit node.left;
+    visit node.right;
+}
+
+postorder - left, right, node
+visit(node){
+    visit node.left;
+    visit node.right;
+    print node.data;
+}
+
+implementation - using iteration (always use stack while iteration)
+
+while stack not empty : 
+    pop stack ->n
+    if n is visited 
+        print n
+    else 
+        push n.right
+        mark n->visited
+        push n.left
+    
