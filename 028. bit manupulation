@@ -1,0 +1,49 @@
+bit manupulation
+
+&, |, ~, ^
+
+>> , <<
+
+(1<<2 | 0<<3) & 1 = 0
+
+a*2 is equal to a<<1
+a/2 is equal to a>>1
+
+flip bits of number
+
+input : 1 1 1 0 0 0 1 0
+output : 0 0 0 1 1 1 0 1
+
+whenever we xor a number with 1 , it flips
+
+1 1 1 0 0 0 1 0 ^ 1 1 1 1 1 1 1 1 = 0 0 0 1 1 1 0 1
+
+~0 = 1 1 1 1 1 1 1 1 
+
+to generate mask 1<<5 = 1 0 0 0 0 0
+
+least significant bit
+count # of bits in a number
+
+1 0 1 1 1 0 = 4
+
+use  x & (x-1)
+
+no of steps to change most significant (1) to 0 is  the no of bits present in that no
+
+compliment of an interger
+
+0 1 0 1  -> 0 0 1 0
+
+do log2(n)
+
+given an array with all number in [1..n] except one number , find the missing number
+
+we can solve using hash and sorting
+
+find sum from 1 to n using formulae
+
+missing no = sum of n number - sum of element in array
+
+
+
