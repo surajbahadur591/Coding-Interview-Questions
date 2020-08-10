@@ -1,0 +1,25 @@
+backtracking
+
+maze problem 
+0 1 1 1
+0 0 1 0
+1 0 0 0 
+1 1 1 0
+
+boolean pathExist( a, i, j){
+    if(outofbound(a, i , j) || a[i][j]==1)
+        return false;
+    if (i==a.length-1 && j==a.length-1)
+        return true;
+    
+    if(pathExist(a,i+1,j)){
+        print (i,j);
+        return true;
+    }
+
+    if(pathExist(a, i, j+1)){
+        print(i,j);
+        return true;
+    }
+    return false;
+}
