@@ -1,0 +1,17 @@
+trie ( prefix tree)
+
+used for autocomplete , dictionary
+
+implemented using maps with nodes
+
+class Trie {
+    insert(string)
+    lookup(string)
+    delete(string)
+}   
+
+Node {
+    list<Node> next; // Hashmap <char, Node> map;
+    bool isWord();
+}
+    
