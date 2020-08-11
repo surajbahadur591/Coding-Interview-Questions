@@ -1,3 +1,5 @@
+//two sum
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         Map <Integer, Integer> map = new HashMap<>();
@@ -7,8 +9,8 @@ class Solution {
             if(map.containsKey(sum))
                 return new int[] {map.get(sum), i };  // returns index of first and second element where i is the index of first number
             else 
-                map.put(nums[i], i); //putting the number with index i in hashmap
+                map.put(nums[i], i); //putting the number with index i in hashmap.
         }
-        throw new IllegalArgumentException("No two sum solution");
+        throw new IllegalArgumentException("No two sum solution");   
     }
 }
