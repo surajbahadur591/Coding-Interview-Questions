@@ -17,4 +17,5 @@ public static void printCombo(int a[], int []buffer, int startindex, int bufferi
             buffer[bufferindex]= a[i];
             printCombo(a, buffer, i+1, bufferindex+1);
       }
+      
 }
