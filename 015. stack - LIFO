@@ -20,3 +20,4 @@ find ( Stack s , int num){
 implement queue using 2 stack (using stack as restriction)
 implement 2 stack using array 
 stack with max
+
