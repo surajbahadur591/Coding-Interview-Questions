@@ -44,3 +44,4 @@ process ( operator, operand):
       result = apply(num1, num2, operator.pop())
       operand(result)
       
+      
