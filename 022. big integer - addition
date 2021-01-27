@@ -30,4 +30,4 @@ public int[] add(int []a, int []b){
             result[i+1] = sum%10;
         }
 }
-
+ 
