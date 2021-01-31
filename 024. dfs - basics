@@ -26,4 +26,3 @@ for all nodes in graph:
     if node is unvisited:
         dfs_visit(node)
         
-
