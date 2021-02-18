@@ -49,3 +49,4 @@ while stack not empty :
         mark n->visited
         push n.left
     
+    
