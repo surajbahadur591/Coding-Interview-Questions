@@ -8,6 +8,8 @@ int findLastNum(int a[]){
     int num;
     for (i = a.length; i>0;i--){
         if(a[i]!=-1){
+        
+        
             num = a[i];
             break;
 
