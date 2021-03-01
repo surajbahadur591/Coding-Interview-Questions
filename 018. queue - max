@@ -5,3 +5,5 @@ find maximum element in queue in O(1) lookup
 sol : use two queue same as stack with max element
 
 
+
+
