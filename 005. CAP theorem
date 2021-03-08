@@ -12,6 +12,8 @@ some requires low consistency like notification, like button
 some requires high consistency like prices, e-commerce website, bank etc
 
 
+
+
 Availablity :  
 the system gives non error response everytime
 suppose if the database is getting updated for x sec, the client should wait and try again after some time
