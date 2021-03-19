@@ -8,6 +8,8 @@ if there are more than 1 DB , if one of database gets updated then the same shou
 to achieve this feature the first database should writes to other database and only after the other databases is updated (aknowledgement is recieved)then only the first database gets updated.
 the tradeoff is , it took longer time to get updated because we have to make round trip to other database
 
+
+
 some requires low consistency like notification, like button
 some requires high consistency like prices, e-commerce website, bank etc
 
