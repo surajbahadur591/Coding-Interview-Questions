@@ -18,6 +18,8 @@ process:
 
 dfs_visit (node):
     mark node_visiting
+    
+    
     process node //ex : print
 
 for all nodes in graph:
