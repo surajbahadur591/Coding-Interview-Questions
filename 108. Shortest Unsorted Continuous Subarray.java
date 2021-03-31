@@ -24,6 +24,8 @@ class Solution {
         for (int i = 0; i < ll; i++) {
             if (min < nums[i]) {
                 l = i;
+                
+                
                 break;
             }
         }
