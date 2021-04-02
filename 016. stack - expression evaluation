@@ -22,6 +22,7 @@ process ( operand stack, operator):
       push result
 
 
+
 infix expression 
 
 32+ -> 3+2
